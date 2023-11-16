@@ -1,0 +1,118 @@
+div {
+  overflow: hidden;
+  overflow-y: hidden;
+}
+html {
+  overflow: hidden;
+}
+.header {
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+  height: 50px;
+}
+
+input {
+  padding: 5px;
+  display: none;
+}
+
+.grid {
+  top: 50px;
+  height: calc(100vh - 50px);
+  position: absolute;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+.img-div {
+  height: 160px;
+  width: 160px;
+  justify-content: center;
+  display: flex;
+}
+
+.img-div:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.img-div img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.main-div {
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+}
+.Drawer {
+  transition: 0.4s ease;
+  transform: scale(0);
+}
+
+.openDrawer {
+  transform: scale(1);
+}
+
+.DrawerToggle {
+  transform: scale(0);
+}
+
+.OpenDrawerToggle {
+  transform: scale(1);
+}
+
+label {
+  margin: 5px;
+}
+
+.Drawer img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.98);
+  -webkit-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.98);
+  -moz-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.98);
+}
+
+/* CSS */
+.button-16 {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  margin: 5px;
+}
+
+.button-16:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+  color: #202124;
+}
+
+.button-16:focus {
+  border-color: #4285f4;
+  outline: none;
+}
